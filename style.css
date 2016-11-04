@@ -1,0 +1,10 @@
+.bas {
+  width: 100%;
+  background-color: lightgrey;
+  height: 40px;
+  border: 1px solid blue;
+}
+
+audio {
+  color: lightgrey;
+}
