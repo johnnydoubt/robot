@@ -66,3 +66,61 @@ a {
       position: absolute;
       right: 0px;
     }
+	
+	/*Css Bouton Déroulant*/
+
+.flexright{
+  display: flex;
+  position: fixed;
+width: 100%;
+height: 10%;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.bouton{
+	margin: 10px;
+}
+.deroul{
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.bouton .hoverbutton{
+  display: none;
+}
+.bouton:hover .hoverbutton{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.hoverbutton a{
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: #e7eae8;
+}
+
+.pageselector{
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-left: 3px solid black;
+}
+.pageselector:hover,
+.pfirst:hover,
+.plast:hover
+{
+ background-color: #9aa19d;
+}
+
+.pfirst{
+  border-top: none;
+  border-bottom: 1px solid grey;
+  border-left: 3px solid black;
+}
+
+.plast{
+  border-top: 1px solid grey;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+}
+/*Fin Css Bouton Déroulant*/
