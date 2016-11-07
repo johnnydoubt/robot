@@ -45,11 +45,11 @@ body {
   top: 50vh;
   font-family: Comic, arial;
 }
-img {
+.classimage {
   max-width: 100%;
   text-align: center;
 }
-a {
+.lienhref {
   color: white;
   font-size: 5vh;
 }
