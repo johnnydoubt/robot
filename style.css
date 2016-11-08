@@ -19,23 +19,25 @@ body {
     background-repeat: no-repeat;
     margin: 0 auto;
     padding: 0;
+	height: 100vh;
 }
 
 .bann {
     position: fixed;
     width: 100%;
-    height: 10%;
-    background-color: black;
+    height: 8%;
+    background-color: rgba(0,0,0, 0.8);
     margin: auto;
     padding: 0;
+	transition: background-color 1s;
 }
 
 .titre {
     font-family: 'saucerbb', Arial, serif;
     color: white;
-    font-size: 37px;
+    font-size: 6vh;
     text-align: center;
-    margin-top: 1%;
+    margin-top: 0.5%;
 }
 .lien {
   text-decoration: overline;
@@ -138,6 +140,10 @@ body {
 }
 .classimage {
   max-width: 100%;
+
+	width: 60vw;
+  height:98vh;
+
   text-align: center;
 }
 .lienhref {
@@ -145,16 +151,102 @@ body {
   font-size: 5vh;
 }
   .bas {
-        position: fixed;
+	position: fixed;
         bottom: 0px;
         width: 100%;
         height: 3%;
-        background-color: black;
+        background-color: rgba(0,0,0, 0.9);
         height: 40px;
         border: 1px solid brown;
+		box-sizing:border-box;
     }
     audio {
       position: absolute;
       right: 0px;
+	  bottom: 0px;
     }
+	
+	/*Css Bouton Déroulant*/
 
+.flexright{
+  display: flex;
+  position: fixed;
+width: 100%;
+height: 8%;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.bouton{
+	margin: 10px;
+}
+
+.imagebouton{
+	width: 5.3vh;
+	border: 1px solid white;
+	border-radius: 2px;
+	box-sizing:border-box;
+}
+
+.bouton .hoverbutton{
+  display: none;
+}
+.bouton:hover .hoverbutton{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.hoverbutton a{
+  width: 5.3vh;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(0,0,0, 0.8);
+  box-sizing:border-box;
+}
+
+.pageselector{
+  border-right: 3px solid white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: 3px solid white;
+  transition: background-color 1s;
+}
+.pageselector:hover,
+.pfirst:hover,
+.plast:hover
+{
+ background-color: white;
+ color: black;
+}
+
+.pfirst{
+	transition: background-color 1s;
+	border-right: 3px solid white;
+  border-top: none;
+  border-bottom: 1px solid white;
+  border-left: 3px solid white;
+}
+
+.plast{
+	transition: background-color 1s;
+	border-right: 3px solid white;
+  border-top: 1px solid white;
+  border-bottom: 3px solid white;
+  border-left: 3px solid white;
+}
+/*Fin Css Bouton Déroulant*/
+
+@media (max-width: 640px){
+	
+	.titre{
+		font-size: 5vh;
+	}
+	.classimage{
+		width: 100vw;
+	}
+	audio{
+		width: 20%;
+	}
+
+	
+}
