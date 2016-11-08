@@ -70,7 +70,7 @@ body {
 .content {
 
 	display: inline-block;
-	column-count: 2;
+	column-count: 3;
 	width: 100vw;
   height: 75vw;
 }
