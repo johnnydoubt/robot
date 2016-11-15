@@ -69,15 +69,10 @@ display: inline-block;
 border: 2px solid black;
 }
 .lafin {
-  margin-top: 4%;
+  margin-top: 1%;
   width:60%;
 display: inline-block;
 border: 2px solid black;
-}
-.end {
-  align-self: center;
-  display: block;
-  width: 100%;
 }
 .bebe {
   width:100%;
