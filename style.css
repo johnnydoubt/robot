@@ -1,159 +1,206 @@
     * {
-    margin: 0;
-    padding: 0;
-}
+        margin: 0;
+        padding: 0;
+    }
 
-@font-face {
-    /* Ajout d'une nouvelle police nommée saucerbb */
-    font-family: 'saucerbb';
-    src: url('saucerbb.ttf')format('truetype');
-}
-@font-face {
-    /* Ajout d'une nouvelle police nommée saucerbb */
-    font-family: 'comic';
-    src: url('ComicBook.otf')format('truetype');
-}
-body {
-    background-image: url("http://www.wealthymorons.com/wp-content/uploads/2016/02/books_texture3031.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    padding: 0;
-	height: 100vh;
-}
+    @font-face {
+        /* Ajout d'une nouvelle police nommée saucerbb */
+        font-family: 'saucerbb';
+        src: url('saucerbb.ttf')format('truetype');
+    }
 
-.bann {
-    position: fixed;
-    width: 100%;
-    height: 8%;
-    background-color: rgba(0,0,0, 0.8);
-    margin: auto;
-    padding: 0;
-	transition: background-color 1s;
-}
+    @font-face {
+        /* Ajout d'une nouvelle police nommée saucerbb */
+        font-family: 'comic';
+        src: url('ComicBook.otf')format('truetype');
+    }
 
-.titre {
-    font-family: 'saucerbb', Arial, serif;
-    color: white;
-    font-size: 6vh;
-    text-align: center;
-    margin-top: 0.5%;
-}
-.lien {
-  text-decoration: overline;
-  z-index: 1;
+    body {
+        background-image: url("http://www.wealthymorons.com/wp-content/uploads/2016/02/books_texture3031.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        padding: 0;
+        height: 100vh;
+    }
+
+    .bann {
+        position: fixed;
+        width: 100%;
+        height: 8%;
+        background-color: rgba(0, 0, 0, 0.8);
+        margin: auto;
+        padding: 0;
+        transition: background-color 1s;
+    }
+
+    .titre {
+        font-family: 'saucerbb', Arial, serif;
+        color: white;
+        font-size: 6vh;
+        text-align: center;
+        margin-top: 0.5%;
+    }
+
+    .lien {
+        text-decoration: overline;
+        z-index: 1;
+        text-align: center;
+        position: relative;
+        top: 50vh;
+        font-family: Comic, arial;
+    }
+.images {
   text-align: center;
-  position: relative;
-  top: 50vh;
-  font-family: Comic, arial;
+  background-image: url(https://johnnydoubt.github.io/robot/page_usee.jpg);
+  background-size: cover;
+  width: 60vw;
+  height: 98vh;
+  margin:auto;
 }
-.classimage {
-	width: 60vw;
-  height:98vh;
-  text-align: center;
+
+.romanphoto {
+  margin-top: 15%;
+  width:30%;
+display: inline-block;
+border: 2px solid black;
 }
-.lienhref {
-  color: white;
-  font-size: 5vh;
+.bebe {
+  width:100%;
 }
-  .bas {
+    .lienhref {
+        color: white;
+        font-size: 5vh;
+    }
+
+    .bas {
         position: fixed;
         bottom: 0px;
         width: 100%;
         height: 3%;
-        background-color: rgba(0,0,0, 0.9);
+        background-color: rgba(0, 0, 0, 0.9);
         height: 40px;
         border: 1px solid brown;
-		box-sizing:border-box;
+        box-sizing: border-box;
     }
+
     audio {
-      position: absolute;
-      right: 0px;
-	  bottom: 0px;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
     }
-	
-	
-	/*Css Bouton D�roulant*/
+    /*Css Bouton D�roulant*/
 
-.flexright{
-  display: flex;
-  position: fixed;
-width: 100%;
-height: 8%;
-  flex-direction: column;
-  align-items: flex-end;
-}
-.bouton{
-	margin: 10px;
-}
+    .flexright {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height: 8%;
+        flex-direction: column;
+        align-items: flex-end;
+    }
 
-.imagebouton{
-	width: 5.3vh;
-	border: 1px solid white;
-	border-radius: 2px;
-	box-sizing:border-box;
-}
+    .bouton {
+        margin: 10px;
+    }
 
-.bouton .hoverbutton{
-  display: none;
-}
-.bouton:hover .hoverbutton{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-.hoverbutton a{
-  width: 5.3vh;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  background-color: rgba(0,0,0, 0.8);
-  box-sizing:border-box;
-}
+    .imagebouton {
+        width: 5.3vh;
+        border: 1px solid white;
+        border-radius: 2px;
+        box-sizing: border-box;
+    }
 
-.pageselector{
-  border-right: 3px solid white;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-  border-left: 3px solid white;
-  transition: background-color 1s;
-}
-.pageselector:hover,
-.pfirst:hover,
-.plast:hover
-{
- background-color: white;
- color: black;
-}
+    .bouton .hoverbutton {
+        display: none;
+    }
 
-.pfirst{
-	transition: background-color 1s;
-	border-right: 3px solid white;
-  border-top: none;
-  border-bottom: 1px solid white;
-  border-left: 3px solid white;
-}
+    .bouton:hover .hoverbutton {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
 
-.plast{
-	transition: background-color 1s;
-	border-right: 3px solid white;
-  border-top: 1px solid white;
-  border-bottom: 3px solid white;
-  border-left: 3px solid white;
-}
-/*Fin Css Bouton D�roulant*/
+    .hoverbutton a {
+        width: 5.3vh;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+        box-sizing: border-box;
+    }
 
-@media (max-width: 640px){
-	
-	.titre{
-		font-size: 5vh;
-	}
-	.classimage{
-		width: 100vw;
-	}
-	audio{
-		width: 20%;
-	}
+    .pageselector {
+        border-right: 3px solid white;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        border-left: 3px solid white;
+        transition: background-color 1s;
+    }
 
-	
-}
+    .pageselector:hover, .pfirst:hover, .plast:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .pfirst {
+        transition: background-color 1s;
+        border-right: 3px solid white;
+        border-top: none;
+        border-bottom: 1px solid white;
+        border-left: 3px solid white;
+    }
+
+    .plast {
+        transition: background-color 1s;
+        border-right: 3px solid white;
+        border-top: 1px solid white;
+        border-bottom: 3px solid white;
+        border-left: 3px solid white;
+    }
+
+    /*Fin Css Bouton Déroulant*/
+
+            @media (max-width: 1180px) {
+                .titre {
+                    font-size: 5vh;
+                }
+
+                .images {
+                    width: 100vw;
+                    height: 110vh;
+                    padding-top: 8%;
+                }
+                .romanphoto {
+                  width: 35%;
+                  margin: auto;
+
+                }
+
+                audio {
+                    width: 30%;
+                }
+            }
+
+    @media (max-width: 640px) {
+        .titre {
+            font-size: 5vh;
+        }
+
+        .images {
+          background-repeat: repeat;
+            width: 100vw;
+            height: 250vh;
+            padding-top: 15%;
+        }
+        .romanphoto {
+          display: block;
+          width: 70%;
+          margin: auto;
+
+        }
+
+        audio {
+            width: 20%;
+        }
+    }
